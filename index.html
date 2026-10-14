@@ -22,7 +22,7 @@
   "address":{
     "@type":"PostalAddress",
     "streetAddress":"Calle Jazmín 1235 A, Colonia Ferrocarril",
-    "addressLocality":"Zapopan",
+    "addressLocality":"Guadalajara",
     "addressRegion":"Jalisco",
     "postalCode":"44440",
     "addressCountry":"MX"
@@ -119,7 +119,7 @@ nav a:not(.btn){position:relative}nav a:not(.btn):after{content:"";position:abso
 
 .authority{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}.authority-copy .lead{font-size:18px}.authority-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.authority-card{border:1px solid #dce9ef;background:#fff;padding:25px;min-height:170px;position:relative}.authority-card:before{content:"";position:absolute;left:0;top:0;width:54px;height:3px;background:linear-gradient(90deg,var(--romo-cyan),var(--romo-aqua))}.authority-card strong{display:block;color:var(--romo-blue);font-size:22px;line-height:1.1;margin-bottom:10px}.authority-card p{margin:0;color:#697c87;font-size:13px;line-height:1.5}.authority-card.wide{grid-column:1/-1;min-height:auto}
 
-.brandwall.real{grid-template-columns:1fr 1fr;gap:0}.brandwall.real .brand-unit{min-height:180px;display:flex;align-items:center;justify-content:center;padding:28px;background:#fff;border-right:1px solid #dce9ef;position:relative}.brandwall.real .brand-unit:last-child{border-right:0}.brand-unit img{max-width:78%;max-height:86px;width:auto;height:auto;object-fit:contain}.brand-unit .brand-note{position:absolute;left:18px;bottom:14px;color:#81939c;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+.brandwall.real{grid-template-columns:repeat(3,minmax(0,1fr));gap:0}.brandwall.real .brand-unit{min-height:180px;display:flex;align-items:center;justify-content:center;padding:28px;background:#fff;border-right:1px solid #dce9ef;position:relative}.brandwall.real .brand-unit:last-child{border-right:0}.brand-unit img{max-width:78%;max-height:86px;width:auto;height:auto;object-fit:contain}.brand-unit .brand-note{position:absolute;left:18px;bottom:14px;color:#81939c;font-size:10px;letter-spacing:.1em;text-transform:uppercase;min-height:0;display:block;border-right:0;background:transparent}
 
 .project-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:16px}.project-card{min-height:330px;padding:34px;position:relative;overflow:hidden;background:linear-gradient(140deg,#003f66,#006e87);color:#fff;display:flex;flex-direction:column;justify-content:flex-end}.project-card.secondary{background:linear-gradient(140deg,#eaf6fb,#f7fffd);color:var(--ink);border:1px solid #dce9ef}.project-card:before{content:"";position:absolute;inset:0;background:linear-gradient(125deg,transparent 0 58%,rgba(0,255,226,.12) 58.2% 59%,transparent 59.2% 73%,rgba(255,255,255,.08) 73.2% 74%,transparent 74.2%)}.project-card>*{position:relative;z-index:1}.project-card small{letter-spacing:.13em;text-transform:uppercase;color:#bafff7}.project-card.secondary small{color:var(--romo-teal)}.project-card h3{font-size:31px;line-height:1.02;margin:10px 0 12px}.project-card p{max-width:620px;line-height:1.6;margin:0;opacity:.84}.project-card .demo-photo-note{margin-top:16px;color:inherit}
 
@@ -130,10 +130,243 @@ nav a:not(.btn){position:relative}nav a:not(.btn):after{content:"";position:abso
 @media(max-width:680px){.catalog-grid,.need-grid,.authority-grid,.brandwall.real,.steps.five{grid-template-columns:1fr}.brandwall.real .brand-unit{border-right:0;border-bottom:1px solid #dce9ef}.brandwall.real .brand-unit:last-child{border-bottom:0}.value-visual{min-height:360px}.coldroom-diagram{min-height:620px;padding:270px 18px 18px}.room-box{left:12%;right:12%;top:8%;bottom:48%}.part-button{position:relative!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;display:block;width:100%;margin-top:8px}.coldroom-info{padding:28px}.product-priority{grid-template-columns:1fr}.product-priority .photo-cat,.product-priority .photo-cat:first-child{min-height:350px;grid-column:auto}.need-card{min-height:auto}.contact-actions .btn{width:100%}}
 @media(prefers-reduced-motion:reduce){.airflow i{animation:none!important}}
 
+
+/* ROMO-WEB-DEMO-011 — intervencion aislada a #cuarto-frio. */
+#cuarto-frio .section-head{margin-bottom:34px}
+#cuarto-frio .section-head .lead{max-width:450px}
+#cuarto-frio .coldroom-layout{grid-template-columns:minmax(0,1.43fr) minmax(320px,.77fr);gap:20px;align-items:stretch}
+#cuarto-frio .coldroom-diagram{min-width:0;min-height:548px;padding:17px 18px 14px;background:radial-gradient(ellipse at 57% 37%,#146788 0%,#063c5b 45%,#032c49 100%);border:1px solid rgba(169,239,250,.24);border-radius:8px;box-shadow:inset 0 0 65px rgba(0,20,40,.19)}
+#cuarto-frio .coldroom-diagram:after{content:none}
+#cuarto-frio .coldroom-diagram-top,#cuarto-frio .coldroom-stage-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;color:#b4dce5;font-size:10px;letter-spacing:.12em;font-weight:600}
+#cuarto-frio .coldroom-diagram-top{padding:0 2px 7px;border-bottom:1px solid rgba(205,249,255,.15)}
+#cuarto-frio .coldroom-diagram-top i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#00ffe2;box-shadow:0 0 12px rgba(0,255,226,.8);vertical-align:middle;margin-right:7px}
+#cuarto-frio .coldroom-diagram-top em{font-style:normal;color:#42a9ba;margin:0 5px}
+#cuarto-frio .coldroom-stage{position:relative;max-width:100%;margin:0 auto}
+#cuarto-frio .coldroom-scene{width:100%;height:auto;display:block;overflow:visible}
+#cuarto-frio .coldroom-controls{position:absolute;inset:0;pointer-events:none}
+#cuarto-frio .part-button{position:absolute;max-width:44%;display:flex;align-items:center;gap:9px;text-transform:none;font-size:12px;font-weight:600;letter-spacing:.005em;line-height:1.15;padding:8px 12px 8px 8px;color:#e9faff;background:rgba(1,33,58,.89);border:1px solid rgba(180,239,251,.43);border-radius:4px;box-shadow:0 12px 28px rgba(1,20,37,.3);backdrop-filter:blur(5px);cursor:pointer;pointer-events:auto;transition:background .2s,border-color .2s,box-shadow .2s;white-space:normal}
+#cuarto-frio .part-button .part-num{flex:none;width:29px;height:27px;border-radius:2px;background:rgba(0,255,226,.14);border:1px solid rgba(0,255,226,.47);color:#87fff1;display:grid;place-items:center;font-size:11px;font-weight:800;letter-spacing:0}
+#cuarto-frio .part-button:hover,#cuarto-frio .part-button[aria-pressed=true]{background:#eafffc;color:#003f66;border-color:#00ffe2;box-shadow:0 10px 26px rgba(0,255,226,.17)}
+#cuarto-frio .part-button:hover .part-num,#cuarto-frio .part-button[aria-pressed=true] .part-num{color:#003f66;background:#00e4cf;border-color:#00c4b8}
+#cuarto-frio .part-button:focus-visible{outline:3px solid #ff8a33;outline-offset:3px}
+#cuarto-frio .part-button[data-part=evaporadora]{left:37%;top:6%}
+#cuarto-frio .part-button[data-part=paneles]{right:0;top:33%}
+#cuarto-frio .part-button[data-part=puerta]{right:0;bottom:11%}
+#cuarto-frio .part-button[data-part=condensadora]{left:0;bottom:10%}
+#cuarto-frio .scene-part{transition:filter .2s,opacity .2s}
+#cuarto-frio .coldroom-scene .scene-pin{opacity:.8;transition:opacity .2s,filter .2s}
+#cuarto-frio .coldroom-diagram[data-selected=evaporadora] .scene-evaporadora,#cuarto-frio .coldroom-diagram[data-selected=paneles] .scene-paneles,#cuarto-frio .coldroom-diagram[data-selected=puerta] .scene-puerta,#cuarto-frio .coldroom-diagram[data-selected=condensadora] .scene-condensadora{filter:drop-shadow(0 0 10px rgba(0,255,226,.75))}
+#cuarto-frio .coldroom-diagram[data-selected=evaporadora] .scene-pin[data-for=evaporadora],#cuarto-frio .coldroom-diagram[data-selected=paneles] .scene-pin[data-for=paneles],#cuarto-frio .coldroom-diagram[data-selected=puerta] .scene-pin[data-for=puerta],#cuarto-frio .coldroom-diagram[data-selected=condensadora] .scene-pin[data-for=condensadora]{filter:drop-shadow(0 0 9px #00ffe2);opacity:1}
+#cuarto-frio .coldroom-stage-footer{border-top:1px solid rgba(205,249,255,.15);padding:11px 2px 0;justify-content:flex-start;gap:18px;letter-spacing:0;font-size:10px;font-weight:400}
+#cuarto-frio .coldroom-stage-footer span:last-child{margin-left:auto;max-width:240px;text-align:right;line-height:1.3;color:#a9c2d1}
+#cuarto-frio .coldroom-swatch{display:inline-block;vertical-align:middle;background:#c9ecf4;width:8px;height:8px;margin-right:5px}
+#cuarto-frio .coldroom-swatch.exterior{background:#00ffe2}
+#cuarto-frio .coldroom-info{min-width:0;padding:30px 28px;justify-content:flex-start;border-radius:7px;box-shadow:0 14px 40px rgba(0,20,45,.15)}
+#cuarto-frio .coldroom-info-index{display:flex;justify-content:space-between;gap:6px;border-bottom:1px solid #e0ebf0;padding-bottom:16px;margin-bottom:26px;font-size:10px;color:#78919c;letter-spacing:.105em;font-weight:700}
+#cuarto-frio .coldroom-info-index span{color:#008b8b;white-space:nowrap}
+#cuarto-frio .coldroom-info small{font-size:10px;color:#008b8b;letter-spacing:.09em}
+#cuarto-frio .coldroom-info h3{font-size:clamp(27px,2.8vw,36px);line-height:1.06;margin:12px 0 15px}
+#cuarto-frio .coldroom-info>p#partCopy{font-size:14px;color:#465f6d;line-height:1.65;min-height:92px}
+#cuarto-frio .coldroom-flow{margin-top:20px;padding-top:18px}
+#cuarto-frio .coldroom-flow b{font-size:12px;letter-spacing:.01em;margin-bottom:10px}
+#cuarto-frio .flow-step{font-size:12px;line-height:1.45;gap:10px;margin-top:10px}
+#cuarto-frio .flow-step span{width:23px;height:23px;font-size:11px}
+#cuarto-frio .flow-step strong{color:#164b68}
+#cuarto-frio .coldroom-disclaimer{padding:13px 14px;background:#edf6f8;border-left:3px solid #008b8b;line-height:1.5;font-size:11px!important;margin-top:24px}
+#cuarto-frio .coldroom-material{display:flex;align-items:center;gap:20px;margin:17px 0 0;border:1px solid rgba(202,245,252,.22);border-radius:6px;padding:11px 18px 11px 11px;background:rgba(0,25,49,.25)}
+#cuarto-frio .coldroom-material img{width:128px;height:65px;object-fit:cover;flex:none;border:1px solid rgba(255,255,255,.18);border-radius:3px}
+#cuarto-frio .coldroom-material figcaption{display:grid;gap:4px;font-size:12px;color:#b9dfe7;line-height:1.45;max-width:575px}
+#cuarto-frio .coldroom-material strong{font-size:13px;color:#fff}
+#cuarto-frio .coldroom-material-label{margin-left:auto;align-self:flex-start;font-size:9px;letter-spacing:.1em;color:#79fff0;white-space:nowrap}
+@media(max-width:1080px){#cuarto-frio .coldroom-layout{grid-template-columns:1fr}#cuarto-frio .coldroom-diagram{min-height:0}#cuarto-frio .coldroom-stage{max-width:800px}#cuarto-frio .coldroom-info>p#partCopy{min-height:0}#cuarto-frio .coldroom-info{padding:30px}#cuarto-frio .coldroom-info h3{font-size:34px}}
+@media(max-width:680px){#cuarto-frio .coldroom-diagram{min-height:0;padding:13px 12px 14px}#cuarto-frio .coldroom-stage{padding:0;min-height:0}#cuarto-frio .coldroom-controls{position:static;display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:4px 0 15px;pointer-events:auto}#cuarto-frio .part-button{position:static!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;max-width:100%;width:100%;margin:0;min-height:48px;padding:8px;justify-content:flex-start;line-height:1.2}#cuarto-frio .coldroom-stage-footer{display:flex;flex-wrap:wrap;gap:8px 15px}#cuarto-frio .coldroom-stage-footer span:last-child{flex-basis:100%;max-width:none;text-align:left;margin:0}#cuarto-frio .coldroom-info{padding:26px 22px}#cuarto-frio .coldroom-material{gap:10px;padding:10px;flex-wrap:wrap}#cuarto-frio .coldroom-material img{width:100px;height:62px}#cuarto-frio .coldroom-material figcaption{flex:1;min-width:150px;font-size:11px}#cuarto-frio .coldroom-material-label{flex-basis:100%;margin:0}#cuarto-frio .coldroom-diagram-top{font-size:9px}}
+@media(max-width:365px){#cuarto-frio .part-button{font-size:11px}#cuarto-frio .part-button .part-num{width:26px;height:25px}#cuarto-frio .coldroom-controls{gap:6px}}
+
+/* ROMO-WEB-DEMO-012 — estilos nuevos EXCLUSIVOS del catálogo prioritario. */
+#productos .romo012-real{background:transparent}
+#productos .romo012-real:after{background:transparent}
+#productos .romo012-real img{}
+#productos .romo012-real:first-child img{}
+#productos .romo012-source{display:block;font-size:10px;line-height:1.35;letter-spacing:.045em;font-style:normal;font-weight:400;color:#e8feff;margin-top:10px;opacity:.88}
+#productos .romo012-reference{color:#d6eced}
+#productos .romo012-families{display:grid;scroll-margin-top:105px}
+#productos .romo012-family{scroll-margin-top:105px;display:grid;background:#fff;border:1px solid #d8e7ec;box-shadow:0 18px 48px rgba(0,63,102,.075)}
+#productos .romo012-family-inverse .romo012-family-media{order:2}
+#productos .romo012-family-media{overflow:hidden}
+#productos .romo012-family-media figure{position:relative}
+#productos .romo012-family-media img{display:block;transition:transform .5s}
+#productos .romo012-primary-photo img{}
+#productos .romo012-secondary-photo img{object-fit:contain}
+#productos .romo012-family-media figcaption{}
+#productos .romo012-family-copy{display:flex;flex-direction:column;justify-content:center;min-width:0}
+#productos .romo012-family-kicker{color:#008b8b;letter-spacing:.15em;font-size:10px;font-weight:700;margin-bottom:18px}
+#productos .romo012-family h3{font-size:clamp(29px,3.2vw,43px);font-weight:800;color:#003f66;line-height:1.06;letter-spacing:-.02em;margin:0 0 16px}
+#productos .romo012-family h3 span{color:#008b8b}
+#productos .romo012-family-lead{font-size:15px;line-height:1.65;color:#3e5766;margin:0 0 21px}
+#productos .romo012-family-label{font-size:10px;font-weight:700;letter-spacing:.1em;color:#6a8490;text-transform:uppercase;margin-bottom:9px}
+#productos .romo012-models{display:flex;flex-wrap:wrap;gap:7px}
+#productos .romo012-models span{background:#eaf5fa;border:1px solid #c9e3ed;border-radius:3px;color:#003f66;padding:6px 10px;font-weight:600;font-size:12px;letter-spacing:.005em}
+#productos .romo012-family-detail{color:#5c7480;line-height:1.5;font-size:13px;margin:19px 0 23px}
+#productos .romo012-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
+#productos .romo012-actions .btn{font-size:12px;padding:12px 16px;text-align:center}
+#productos .romo012-actions .btn span{margin-left:7px}
+#productos .romo012-sheet{font-size:12px;font-weight:700;color:#006c89;text-decoration:underline;text-decoration-color:#76becd;text-underline-offset:4px}
+#productos .romo012-sheet:hover{color:#003f66}
+#productos .romo012-docnote{font-size:10px;line-height:1.45;color:#80929c;margin-top:16px}
+#productos .romo012-catalog-foot{font-size:11px;line-height:1.5;color:#617a87;margin:0;padding:4px 0 0}
+#productos .romo012-catalog-link{display:inline-block;color:#006a8b;text-decoration:underline;text-underline-offset:3px;font-weight:700;margin-top:5px}
+#productos .romo012-family a:focus-visible,#productos .romo012-catalog-link:focus-visible{outline:3px solid #009cff;outline-offset:3px}
+
+
+
+/* ROMO-WEB-DEMO-012B — disciplina visual de imágenes y contenedores */
+:root{--romo-media-bg:#f7fbfd;--romo-media-bg-2:#eef5f8;--romo-media-stroke:#d7e6ec;--romo-media-shadow:0 18px 28px rgba(0,52,84,.12)}
+img{max-width:100%}
+#productos .photo-cat.romo012-real{background:linear-gradient(145deg,#edf4f7 0%,#dce9ef 100%)}
+#productos .photo-cat.romo012-real:after{background:linear-gradient(180deg,rgba(0,41,67,.02) 0%,rgba(0,41,67,.14) 54%,rgba(0,41,67,.86) 100%)}
+#productos .photo-cat.romo012-real img{position:absolute;left:50%;top:46%;inset:auto;width:auto;height:auto;max-width:calc(100% - 56px);max-height:calc(100% - 152px);transform:translate(-50%,-50%);object-fit:contain;object-position:center center;filter:drop-shadow(0 18px 24px rgba(0,47,73,.15));transition:transform .5s,filter .5s}
+#productos .photo-cat.romo012-real:first-child img{max-width:calc(100% - 72px);max-height:calc(100% - 168px)}
+#productos .photo-cat.romo012-real:hover img{transform:translate(-50%,-50%) scale(1.02);filter:drop-shadow(0 20px 30px rgba(0,47,73,.18))}
+#productos .photo-cat.romo012-real .pcopy{left:24px;right:24px;bottom:22px}
+#productos .romo012-families{margin:54px 0 10px;gap:24px}
+#productos .romo012-family{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;min-height:unset}
+#productos .romo012-family-media{min-width:0;min-height:0;padding:18px;background:linear-gradient(145deg,var(--romo-media-bg),var(--romo-media-bg-2));display:grid;grid-template-rows:minmax(305px,1fr) minmax(142px,170px);gap:14px;overflow:hidden}
+#productos .romo012-family-media figure{margin:0;position:relative;min-width:0;min-height:0;background:#fff;border:1px solid var(--romo-media-stroke);overflow:hidden;display:grid;place-items:center;padding:22px 22px 50px;border-radius:4px}
+#productos .romo012-family-media img{width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;display:block;filter:drop-shadow(0 18px 24px rgba(0,40,66,.12));transition:transform .45s ease}
+#productos .romo012-family-media figure:hover img{transform:scale(1.015)}
+#productos .romo012-primary-photo{min-height:0}
+#productos .romo012-primary-photo img{padding:0;max-width:94%;max-height:340px}
+#productos .romo012-secondary-photo{min-height:0}
+#productos .romo012-secondary-photo img{padding:0;max-width:92%;max-height:108px}
+#productos .romo012-family-media figcaption{position:absolute;bottom:0;left:0;right:0;text-align:left;padding:9px 16px;background:rgba(0,63,102,.92);color:#ecfeff;font-size:10px;letter-spacing:.05em}
+#productos .romo012-family-copy{padding:34px clamp(26px,3.5vw,44px);display:flex;flex-direction:column;justify-content:center;min-width:0}
+#productos .romo012-family h3{max-width:14ch}
+#productos .romo012-family-lead{max-width:56ch}
+#productos .romo012-family-detail{max-width:58ch}
+#productos .romo012-actions{align-items:flex-start}
+#productos .romo012-actions .btn{min-width:160px}
+#marcas .brand-unit{background:linear-gradient(145deg,#fbfdfe,#f2f8fb)}
+#marcas .brand-unit img{max-width:72%;max-height:78px}
+#cuarto-frio .coldroom-material{align-items:center;background:rgba(255,255,255,.06)}
+#cuarto-frio .coldroom-material img{background:#fff;object-fit:contain;padding:4px}
+@media(max-width:1100px){#productos .romo012-family{grid-template-columns:.92fr 1.08fr}#productos .romo012-primary-photo img{max-height:310px}}
+@media(max-width:950px){#productos .romo012-family{grid-template-columns:1fr}#productos .romo012-family-inverse .romo012-family-media{order:0}#productos .romo012-family-media{padding:14px;height:auto;grid-template-rows:minmax(275px,1fr) 140px}#productos .romo012-primary-photo img{max-height:300px}#productos .romo012-secondary-photo img{max-height:96px}#productos .romo012-family-copy{padding:28px 24px 32px}}
+@media(max-width:560px){#productos .photo-cat.romo012-real img{top:43%;max-width:calc(100% - 30px);max-height:calc(100% - 134px)}#productos .photo-cat.romo012-real:first-child img{max-width:calc(100% - 34px);max-height:calc(100% - 146px)}#productos .photo-cat.romo012-real .pcopy{left:18px;right:18px;bottom:18px}#productos .romo012-families{margin-top:40px;gap:18px}#productos .romo012-family-media{padding:12px;grid-template-rows:minmax(230px,1fr) 118px}#productos .romo012-family-media figure{padding:14px 14px 44px}#productos .romo012-primary-photo img{max-width:92%;max-height:250px}#productos .romo012-secondary-photo img{max-width:92%;max-height:74px}#productos .romo012-family-copy{padding:24px 18px 28px}#productos .romo012-family h3{font-size:30px;max-width:none}#productos .romo012-actions{flex-direction:column;gap:14px}#productos .romo012-actions .btn{width:100%;min-width:0}#marcas .brand-unit img{max-width:76%;max-height:64px}}
+
+
+/* ROMO-WEB-DEMO-013: galería documental individual, sin alterar las fichas 012D. */
+#productos .romo013-photo-grid-single{grid-template-columns:minmax(0,min(100%,260px))}
+#productos .romo013-photo-grid-single img{height:145px}
+
+/* ROMO-WEB-DEMO-012D — presentacion editorial: SIN fotos gigantes del catalogo. */
+#productos .romo012-family.romo012-editorial{display:grid;grid-template-columns:minmax(0,1.07fr) minmax(0,.93fr);gap:0;min-height:0;overflow:hidden;align-items:stretch;border:1px solid #d5e5ec;border-radius:8px;background:white;box-shadow:0 16px 44px rgba(0,63,102,.07)}
+#productos .romo012-editorial .romo012-family-copy{min-width:0;display:block;padding:clamp(30px,4vw,58px) clamp(25px,4.4vw,62px);background:white;order:0}
+#productos .romo012-editorial .romo012-family-copy h3{max-width:21ch;font-size:clamp(31px,3vw,44px);letter-spacing:-.02em;line-height:1.13;margin:0 0 22px}
+#productos .romo012-editorial .romo012-family-lead{max-width:59ch;line-height:1.7;margin-bottom:22px}
+#productos .romo012-editorial .romo012-family-detail{max-width:60ch}
+#productos .romo012-editorial .romo012-concept{order:1;position:relative;min-width:0;min-height:520px;isolation:isolate;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:30px 35px 27px;background:radial-gradient(ellipse at 65% 43%,rgba(0,156,255,.40),transparent 42%),linear-gradient(140deg,#075777 0%,#003f66 54%,#002a47 100%);color:#fff}
+#productos .romo012-editorial.romo012-family-inverse .romo012-concept{background:radial-gradient(ellipse at 58% 42%,rgba(0,255,226,.22),transparent 40%),linear-gradient(138deg,#008b8b 0%,#005b74 42%,#003f66 100%)}
+#productos .romo012-concept-grid{position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.14;background-image:linear-gradient(rgba(255,255,255,.21) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.21) 1px,transparent 1px);background-size:34px 34px;mask-image:linear-gradient(90deg,transparent,black)}
+#productos .romo012-concept-heading,#productos .romo012-concept-bottom{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:10px;letter-spacing:.145em;font-weight:700;color:#b4e8f1;position:relative;z-index:1}
+#productos .romo012-concept-bottom{border-top:1px solid rgba(255,255,255,.23);padding-top:19px;letter-spacing:.1em}
+#productos .romo012-concept-bottom span:last-child{font-size:24px;line-height:1;color:#00ffe2}
+#productos .romo012-concept-art{position:relative;flex:1;min-height:265px;display:grid;place-items:center;z-index:0}
+#productos .romo012-concept-ring{position:relative;width:min(295px,85%);aspect-ratio:1;border:1.5px solid rgba(195,255,255,.62);border-radius:50%;display:grid;place-items:center;box-shadow:0 0 0 22px rgba(0,255,226,.06),0 0 0 50px rgba(0,255,226,.025)}
+#productos .romo012-concept-ring:before,#productos .romo012-concept-ring:after{content:'';position:absolute;inset:16%;border:1px solid rgba(255,255,255,.40);border-radius:50%}
+#productos .romo012-concept-ring:after{inset:36%;background:rgba(0,255,226,.10);border:1px solid #00ffe2;box-shadow:0 0 35px rgba(0,255,226,.14)}
+#productos .romo012-concept-ring i{position:absolute;width:55%;height:1px;background:rgba(255,255,255,.4);transform:rotate(0deg)}
+#productos .romo012-concept-ring i:nth-child(2){transform:rotate(60deg)}
+#productos .romo012-concept-ring i:nth-child(3){transform:rotate(120deg)}
+#productos .romo012-concept-axis{position:absolute;top:50%;left:2%;width:96%;height:1px;background:linear-gradient(90deg,transparent,rgba(0,255,226,.8),transparent);transform:rotate(-30deg)}
+#productos .romo012-concept-plus{position:absolute;color:#00ffe2;font:700 23px Kanit,sans-serif}
+#productos .romo012-concept-plus.plus-a{top:21%;right:13%}
+#productos .romo012-concept-plus.plus-b{bottom:13%;left:11%}
+#productos .romo012-concept-copy{position:relative;z-index:1;margin-bottom:32px}
+#productos .romo012-concept-copy>span{font-size:10px;letter-spacing:.16em;color:#9bffeb;font-weight:700}
+#productos .romo012-concept-copy strong{display:block;font-size:clamp(29px,3.4vw,43px);line-height:1.07;letter-spacing:-.025em;font-weight:750;margin:9px 0 10px;color:#fff}
+#productos .romo012-concept-copy p{font-size:13px;color:#d2f4f4;line-height:1.5;margin:0}
+#productos .romo012-photo-disclosure{border-top:1px solid #dae7ec;margin-top:26px;padding-top:15px}
+#productos .romo012-photo-disclosure summary{color:#006c8b;font-weight:700;font-size:13px;cursor:pointer;list-style:none;display:flex;gap:12px;justify-content:space-between;align-items:center;max-width:420px}
+#productos .romo012-photo-disclosure summary::-webkit-details-marker{display:none}
+#productos .romo012-photo-disclosure summary span{font-size:19px;transition:transform .2s}
+#productos .romo012-photo-disclosure[open] summary span{transform:rotate(45deg)}
+#productos .romo012-photo-disclosure summary:focus-visible{outline:2px solid #009cff;outline-offset:5px}
+#productos .romo012-photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}
+#productos .romo012-photo-grid figure{margin:0;min-width:0;background:#f7fafb;padding:10px;border:1px solid #dbe8ee;border-radius:5px;display:flex;flex-direction:column;align-items:center;justify-content:space-between}
+#productos .romo012-photo-grid img{display:block;width:100%;height:130px;object-fit:contain;max-width:100%}
+#productos .romo012-photo-grid figcaption{font-size:10px;line-height:1.35;color:#496575;text-align:center;padding:9px 3px 1px;letter-spacing:0}
+#productos .romo012-photo-disclosure>p{color:#788c96;font-size:11px;line-height:1.5;margin:12px 0 0}
+#productos .romo012-editorial .romo012-actions{align-items:center}
+#productos .romo012-editorial .romo012-actions .btn{width:auto}
+#productos .romo012-editorial .romo012-docnote{margin-top:15px}
+@media(max-width:1000px){#productos .romo012-family.romo012-editorial{grid-template-columns:minmax(0,1fr) minmax(0,.83fr)}#productos .romo012-editorial .romo012-concept{min-height:500px;padding:24px}#productos .romo012-concept-ring{width:min(245px,84%)}#productos .romo012-editorial .romo012-family-copy{padding:34px 30px}}
+@media(max-width:760px){#productos .romo012-family.romo012-editorial{grid-template-columns:1fr}#productos .romo012-editorial .romo012-family-copy{order:0;padding:32px 25px 28px}#productos .romo012-editorial .romo012-concept{order:1;min-height:330px;padding:24px}#productos .romo012-concept-art{min-height:130px;position:absolute;top:26px;right:0;bottom:0;width:45%;opacity:.42;pointer-events:none}#productos .romo012-concept-ring{width:min(195px,85%)}#productos .romo012-concept-copy{margin:95px 0 32px;max-width:65%}#productos .romo012-concept-copy strong{font-size:32px}}
+@media(max-width:420px){#productos .romo012-editorial .romo012-family-copy{padding:27px 19px}#productos .romo012-editorial .romo012-family-copy h3{font-size:31px}#productos .romo012-editorial .romo012-concept{min-height:290px;padding:20px}#productos .romo012-concept-copy{margin:85px 0 26px;max-width:70%}#productos .romo012-concept-copy strong{font-size:29px}#productos .romo012-concept-ring{width:175px}#productos .romo012-photo-grid img{height:95px}#productos .romo012-editorial .romo012-actions .btn{width:100%}#productos .romo012-concept-heading,#productos .romo012-concept-bottom{font-size:9px}}
+
+/* ROMO-WEB-DEMO-013B — ajuste de lectura del catálogo. Alcance: 4 fichas de familia. */
+#productos .romo012-family.romo012-editorial{grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);box-shadow:0 14px 38px rgba(0,63,102,.065)}
+#productos .romo012-editorial .romo013b-gallery{order:0;min-width:0;display:flex;flex-direction:column;gap:13px;padding:17px;background:linear-gradient(155deg,#eef6fa 0%,#e7f1f6 100%);border-right:1px solid #d6e7ee}
+#productos .romo012-editorial .romo012-family-copy{order:1;padding:clamp(28px,3.2vw,45px) clamp(25px,3.9vw,55px);align-self:center}
+#productos .romo012-editorial .romo012-family-kicker{margin-bottom:13px}
+#productos .romo012-editorial .romo012-family-copy h3{margin-bottom:17px;font-size:clamp(31px,3vw,43px)}
+#productos .romo012-editorial .romo012-family-lead{margin-bottom:18px;line-height:1.64}
+#productos .romo012-editorial .romo012-family-detail{margin:16px 0 20px}
+#productos .romo012-editorial .romo012-docnote{margin-top:12px}
+#productos .romo013b-mediahead{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:3px 3px 0;color:#004d6d;font-size:10px;font-weight:700;letter-spacing:.105em}
+#productos .romo013b-mediahead span:first-child{display:flex;align-items:center;gap:7px}
+#productos .romo013b-mediahead i{width:7px;height:7px;border-radius:50%;background:#008b8b;display:inline-block;box-shadow:0 0 0 4px rgba(0,139,139,.1)}
+#productos .romo013b-mediahead span:last-child{font-size:9px;color:#708995;white-space:nowrap}
+#productos .romo013b-photos{display:flex;flex-direction:column;gap:10px;flex:1;min-height:0}
+#productos .romo013b-gallery figure{margin:0;min-width:0;background:#fff;border:1px solid #d9e6ed;overflow:hidden;border-radius:4px}
+#productos .romo013b-gallery a{display:grid;place-items:center;background:radial-gradient(circle at center,#fff 20%,#f4f9fc 100%);min-width:0;overflow:hidden}
+#productos .romo013b-gallery img{display:block;object-fit:contain;width:100%;height:100%;max-width:100%;filter:drop-shadow(0 14px 16px rgba(13,51,73,.12));transition:transform .25s ease}
+#productos .romo013b-gallery a:hover img{transform:scale(1.035)}
+#productos .romo013b-gallery a:focus-visible{outline:3px solid #009cff;outline-offset:-3px}
+#productos .romo013b-feature{display:flex;flex-direction:column;flex:1}
+#productos .romo013b-feature a{flex:1;min-height:270px;padding:22px 28px;max-height:350px}
+#productos .romo013b-feature img{max-height:292px}
+#productos .romo013b-gallery figcaption{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:5px 15px;padding:12px 14px;background:#fff;border-top:1px solid #eaf0f4;line-height:1.38}
+#productos .romo013b-gallery figcaption strong{font-size:12px;font-weight:600;color:#003f66}
+#productos .romo013b-gallery figcaption small{font-size:10px;color:#758b98}
+#productos .romo013b-secondary{display:flex;align-items:center;min-height:104px}
+#productos .romo013b-secondary a{width:126px;min-width:126px;height:103px;padding:9px 11px;border-right:1px solid #e3edf1}
+#productos .romo013b-secondary img{max-height:83px}
+#productos .romo013b-secondary figcaption{border-top:0;display:block;padding:9px 13px}
+#productos .romo013b-secondary figcaption strong{display:block;margin-bottom:5px}
+#productos .romo013b-secondary figcaption small{display:block}
+#productos .romo013b-attribution{margin:0 2px;color:#597787;font-size:10px;line-height:1.46}
+#productos .romo013b-single .romo013b-feature a{max-height:465px;min-height:385px}
+#productos .romo013b-single .romo013b-feature img{max-height:405px;max-width:85%}
+@media(max-width:950px){
+  #productos .romo012-family.romo012-editorial{grid-template-columns:1fr}
+  #productos .romo012-editorial .romo013b-gallery{order:0;padding:14px;border-right:0;border-bottom:1px solid #d6e7ee}
+  #productos .romo012-editorial .romo012-family-copy{order:1;padding:30px 28px 34px;align-self:auto}
+  #productos .romo013b-feature a{min-height:260px;max-height:320px}
+  #productos .romo013b-single .romo013b-feature a{min-height:270px;max-height:360px}
+}
+@media(max-width:560px){
+  #productos .romo012-editorial .romo013b-gallery{gap:9px;padding:10px}
+  #productos .romo013b-mediahead{padding:7px 5px 0;font-size:9px;letter-spacing:.065em}
+  #productos .romo013b-mediahead span:last-child{font-size:8px}
+  #productos .romo013b-feature a{min-height:195px;max-height:240px;padding:12px}
+  #productos .romo013b-feature img{max-height:195px}
+  #productos .romo013b-single .romo013b-feature a{min-height:235px;max-height:290px}
+  #productos .romo013b-single .romo013b-feature img{max-height:245px;max-width:95%}
+  #productos .romo013b-secondary{min-height:92px}
+  #productos .romo013b-secondary a{width:96px;min-width:96px;height:92px;padding:8px}
+  #productos .romo013b-secondary img{max-height:70px}
+  #productos .romo013b-gallery figcaption{padding:9px 10px}
+  #productos .romo013b-gallery figcaption strong{font-size:11px}
+  #productos .romo013b-gallery figcaption small{font-size:9px}
+  #productos .romo013b-attribution{font-size:10px;margin:0 4px 3px}
+  #productos .romo012-editorial .romo012-family-copy{padding:27px 20px 31px}
+  #productos .romo012-editorial .romo012-family-copy h3{font-size:31px}
+}
+
 </style>
 </head>
 <body>
-<div class="top"><div class="wrap"><span>ROMO REFRIGERACIÓN · Sitio demostrativo</span><span class="demo">ROMO-WEB-DEMO-009 · Contenido comercial para validación</span></div></div>
+<div class="top"><div class="wrap"><span>ROMO REFRIGERACIÓN · Sitio demostrativo</span><span class="demo">ROMO-WEB-DEMO-012D · Catálogo prioritario</span></div></div>
 <header><div class="wrap nav"><a class="brand" href="#inicio" aria-label="ROMO Refrigeración · Inicio"><img src="assets/romo-logo-blue.png" alt="ROMO Refrigeración" width="145" height="50"><span class="logoMark">ROMO <small>REFRIGERACIÓN</small></span></a><nav aria-label="Navegación principal"><a href="#nosotros">Nosotros</a><a href="#productos">Productos</a><a href="#cuarto-frio">Cuarto frío</a><a href="#aplicaciones">Soluciones</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a><a class="btn primary" href="#contacto">Solicitar cotización</a></nav><button class="menu" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button></div></header>
 <main>
 <section class="hero" id="inicio"><div class="hero-bg"></div><div class="hero-shade"></div><div class="hero-glow"></div><div class="hero-slice" aria-hidden="true"></div><div class="hero-flow" aria-hidden="true"><span></span><span></span><span></span><span></span></div><div class="cold-line" aria-hidden="true"></div><div class="cold-line two" aria-hidden="true"></div><div class="romo-cut" aria-hidden="true"></div><div class="romo-streaks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><div class="wrap hero-grid"><div class="hero-copy"><div class="hero-brand"><img src="assets/romo-logo-white.png" alt="ROMO Refrigeración" width="235" height="104"></div><div class="eyebrow">Refrigeración comercial e industrial</div><h1>El frío.<span class="accent">Bajo control.</span></h1><p>Equipos y soluciones para conservación de productos y cadena de frío, desde el suministro de componentes hasta proyectos de cuartos fríos.</p><div class="actions"><a class="btn primary" href="#productos">Explorar productos</a><a class="btn outline" href="#contacto">Solicitar cotización</a></div></div><div class="hero-index">ROMO · REFRIGERACIÓN</div><div class="hero-scroll">Descubre</div></div></section>
@@ -142,33 +375,260 @@ nav a:not(.btn){position:relative}nav a:not(.btn):after{content:"";position:abso
 
 <section class="section value-intro" id="nosotros"><div class="wrap split"><div class="value-copy"><div class="eyebrow" style="color:#008b8b">ROMO Refrigeración</div><h2>Soluciones para toda la cadena de frío</h2><p class="lead">ROMO forma parte de la cadena de frío mediante el suministro de equipos de refrigeración comercial e industrial y el desarrollo de proyectos de cuartos fríos para conservación de productos.</p><div class="one-point"><b>Un solo punto para tu proyecto.</b><span>La propuesta de ROMO concentra equipos, componentes y materiales del ramo de refrigeración para evitar que el cliente tenga que buscar múltiples proveedores.</span></div><div class="features"><div class="feature"><b>Especialización</b><span>Refrigeración y cadena de frío.</span></div><div class="feature"><b>Atención</b><span>Trato personalizado.</span></div><div class="feature"><b>Adaptabilidad</b><span>Catálogo amplio para distintas necesidades.</span></div></div></div><div class="value-visual" role="img" aria-label="Identidad visual de ROMO Refrigeración aplicada a cadena de frío"><div class="visual-label"><small>Solución integral</small><strong>Del equipo al cuarto frío.</strong></div></div></div></section>
 
-<section class="section soft" id="productos"><div class="wrap"><div class="section-head"><div><div class="eyebrow" style="color:#008b8b">Catálogo sin precios</div><h2>Equipos para refrigeración comercial e industrial</h2></div><p class="lead">ROMO señaló como prioridad las unidades condensadoras y las unidades evaporadoras. La arquitectura queda preparada para incorporar fotografías, marca, descripción y ficha técnica conforme se entregue el catálogo definitivo.</p></div><div class="product-priority">
-<a class="photo-cat" href="#catalogo" data-product-family="unidades-condensadoras"><img loading="lazy" width="1200" height="1400" src="https://images.pexels.com/photos/5498222/pexels-photo-5498222.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Imagen demostrativa de refrigeración industrial para la categoría de unidades condensadoras"><div class="pcopy"><small>01 · Producto prioritario</small><h3>Unidades condensadoras</h3><span>VER CATEGORÍA →</span></div></a>
-<a class="photo-cat" href="#catalogo" data-product-family="unidades-evaporadoras"><img loading="lazy" width="900" height="700" src="https://images.pexels.com/photos/5498226/pexels-photo-5498226.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Imagen demostrativa para la categoría de unidades evaporadoras"><div class="pcopy"><small>02 · Producto prioritario</small><h3>Unidades evaporadoras</h3><span>VER CATEGORÍA →</span></div></a>
-<a class="photo-cat" href="#cuarto-frio"><img loading="lazy" width="900" height="700" src="https://images.pexels.com/photos/17546504/pexels-photo-17546504.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Imagen demostrativa de cámara frigorífica y cuarto frío"><div class="pcopy"><small>03 · Solución</small><h3>Cuartos fríos</h3><span>CONOCER INTEGRACIÓN →</span></div></a>
-<a class="photo-cat" href="#catalogo"><img loading="lazy" width="900" height="700" src="https://images.pexels.com/photos/5498228/pexels-photo-5498228.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Imagen demostrativa de equipo industrial de refrigeración"><div class="pcopy"><small>04 · Componentes</small><h3>Compresores y condensadores</h3><span>VER CATÁLOGO →</span></div></a>
-<a class="photo-cat" href="#catalogo"><img loading="lazy" width="900" height="700" src="https://images.pexels.com/photos/5953713/pexels-photo-5953713.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Imagen demostrativa de instalación industrial"><div class="pcopy"><small>05 · Proyecto</small><h3>Paneles, puertas y racks</h3><span>VER CATÁLOGO →</span></div></a>
-</div><div class="demo-badge">Fotografías demostrativas; se sustituirán por material real ROMO</div>
+<section class="section soft" id="productos"><div class="wrap"><div class="section-head"><div><div class="eyebrow" style="color:#008b8b">Catálogo sin precios</div><h2>Equipos para refrigeración comercial e industrial</h2></div><p class="lead">Conoce nuestras familias prioritarias, unidades condensadoras y evaporadores, y explora también compresores y condensadores. Consulta modelos representativos y solicita asesoría para elegir el equipo adecuado.</p></div><div class="product-priority">
+<a class="photo-cat" href="#condensadoras" data-product-family="unidades-condensadoras"><img loading="lazy" width="1200" height="1400" src="https://images.pexels.com/photos/5498222/pexels-photo-5498222.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Imagen de apoyo visual para la categoría de unidades condensadoras"><div class="pcopy"><small>01 · Producto prioritario</small><h3>Unidades condensadoras</h3><span>EXPLORAR MODELOS →</span><em class="romo012-source romo012-reference">Imagen de apoyo visual</em></div></a>
+<a class="photo-cat" href="#evaporadores" data-product-family="unidades-evaporadoras"><img loading="lazy" width="900" height="700" src="https://images.pexels.com/photos/5498226/pexels-photo-5498226.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Imagen de apoyo visual para la categoría de evaporadores"><div class="pcopy"><small>02 · Producto prioritario</small><h3>Evaporadores</h3><span>EXPLORAR MODELOS →</span><em class="romo012-source romo012-reference">Imagen de apoyo visual</em></div></a>
+<a class="photo-cat" href="#cuarto-frio"><img loading="lazy" width="900" height="700" src="https://images.pexels.com/photos/17546504/pexels-photo-17546504.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Imagen demostrativa de cámara frigorífica y cuarto frío"><div class="pcopy"><small>03 · Solución</small><h3>Cuartos fríos</h3><span>CONOCER INTEGRACIÓN →</span><em class="romo012-source romo012-reference">Imagen de referencia</em></div></a>
+<a class="photo-cat" href="#compresores"><img loading="lazy" width="900" height="700" src="https://images.pexels.com/photos/5498228/pexels-photo-5498228.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Imagen demostrativa de equipo industrial de refrigeración"><div class="pcopy"><small>04 · Componentes</small><h3>Compresores y condensadores</h3><span>EXPLORAR FAMILIAS →</span><em class="romo012-source romo012-reference">Imagen de referencia</em></div></a>
+<a class="photo-cat" href="#catalogo"><img loading="lazy" width="900" height="700" src="https://images.pexels.com/photos/5953713/pexels-photo-5953713.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Imagen demostrativa de instalación industrial"><div class="pcopy"><small>05 · Proyecto</small><h3>Paneles, puertas y racks</h3><span>VER CATÁLOGO →</span><em class="romo012-source romo012-reference">Imagen de referencia</em></div></a>
+</div>
+<!-- ROMO-WEB-DEMO-012: detalle informativo de las DOS familias prioritarias. -->
+<div class="romo012-families" aria-label="Equipos prioritarios del catálogo ROMO">
+  <article class="romo012-family romo012-editorial" id="condensadoras" aria-labelledby="romo012-cond-title"><div class="romo012-family-copy">
+      <div class="romo012-family-kicker">01 / EQUIPOS PRIORITARIOS</div>
+      <h3 id="romo012-cond-title">Unidades <span>condensadoras</span></h3>
+      <p class="romo012-family-lead">Equipos que integran la etapa de compresión y condensación dentro de un sistema de refrigeración. ROMO presenta opciones semiherméticas y compactas para distintas necesidades de instalación.</p>
+      <div class="romo012-family-label">Modelos representativos del catálogo</div>
+      <div class="romo012-models"><span>CEM 10 HP (4VES-10Y)</span><span>CEM 15 HP (4PES-15Y)</span><span>CEM 20 HP (4NES-20Y)</span></div>
+      <p class="romo012-family-detail">La serie semihermética CEM figura tanto en el catálogo ROMO como en el material técnico COMENERGY. La selección debe revisarse según las necesidades del proyecto.</p>
+      <div class="romo012-actions"><a class="btn primary" href="https://wa.me/523332557257?text=Hola%20ROMO%20Refrigeraci%C3%B3n%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20y%20cotizaci%C3%B3n%20de%20unidades%20condensadoras.%20%C2%BFMe%20pueden%20asesorar%20sobre%20los%20modelos%20CEM%3F" target="_blank" rel="noopener">Solicitar cotización <span aria-hidden="true">↗</span></a><a class="romo012-sheet" href="assets/documentos/romo-unidades-condensadoras-comenergy-extracto.pdf" target="_blank" rel="noopener" aria-label="Abrir extracto técnico PDF de unidades condensadoras COMENERGY">Ver documentación técnica <span aria-hidden="true">↗</span></a></div>
+      <div class="romo012-docnote">Documento del fabricante COMENERGY · extracto de unidades semiherméticas (pág. 11 del original).</div>
+    </div>
+    <aside class="romo013b-gallery" aria-label="Fotografías reales del catálogo de unidades condensadoras">
+      <div class="romo013b-mediahead"><span><i aria-hidden="true"></i> EQUIPOS REALES DEL CATÁLOGO</span><span>FAMILIA 01 / 04</span></div>
+      <div class="romo013b-photos"><figure class="romo013b-feature">
+      <a href="assets/romo-condensadora-semihermetica.webp" target="_blank" rel="noopener" aria-label="Ampliar fotografía real: Producto del catálogo ROMO · Unidad semihermética">
+        <img loading="lazy" width="1400" height="969" src="assets/romo-condensadora-semihermetica.webp" alt="Fotografía de unidad condensadora semihermética incluida en el catálogo ROMO">
+      </a>
+      <figcaption><strong>Producto del catálogo ROMO · Unidad semihermética</strong><small>Imagen de la familia, no del modelo exacto · <span aria-hidden="true">↗</span> ampliar</small></figcaption>
+    </figure><figure class="romo013b-secondary">
+      <a href="assets/romo-condensadora-compacta.webp" target="_blank" rel="noopener" aria-label="Ampliar fotografía real: Producto del catálogo ROMO · Unidad compacta">
+        <img loading="lazy" width="1100" height="1200" src="assets/romo-condensadora-compacta.webp" alt="Fotografía de unidad condensadora compacta incluida en el catálogo ROMO">
+      </a>
+      <figcaption><strong>Producto del catálogo ROMO · Unidad compacta</strong><small>Otra referencia del catálogo · <span aria-hidden="true">↗</span> ampliar</small></figcaption>
+    </figure></div>
+      <p class="romo013b-attribution">Fotografías originales de producto facilitadas en el catálogo ROMO. Representan la familia de equipos y no necesariamente cada modelo listado.</p>
+    </aside>
+  </article>
+  <article class="romo012-family romo012-family-inverse romo012-editorial" id="evaporadores" aria-labelledby="romo012-evap-title"><div class="romo012-family-copy">
+      <div class="romo012-family-kicker">02 / EQUIPOS PRIORITARIOS</div>
+      <h3 id="romo012-evap-title">Evaporadores <span>de refrigeración</span></h3>
+      <p class="romo012-family-lead">Equipos encargados del intercambio de calor en el espacio refrigerado. El catálogo incluye familias para conservación y congelación, con configuraciones que dependen de la aplicación.</p>
+      <div class="romo012-family-label">Modelos representativos del catálogo</div>
+      <div class="romo012-models"><span>ZLM-2.8/15</span><span>ZLM-7.5/40</span><span>DJ-34.6/210</span><span>DH-D40</span></div>
+      <p class="romo012-family-detail">La documentación COMENERGY describe la serie ZLM para almacenamiento refrigerado, la DJ para congelación y la DH con suministro de aire por ambos lados.</p>
+      <div class="romo012-actions"><a class="btn primary" href="https://wa.me/523332557257?text=Hola%20ROMO%20Refrigeraci%C3%B3n%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20y%20cotizaci%C3%B3n%20de%20evaporadores.%20%C2%BFMe%20pueden%20asesorar%20sobre%20los%20modelos%20ZLM%2C%20DJ%20y%20DH%3F" target="_blank" rel="noopener">Solicitar cotización <span aria-hidden="true">↗</span></a><a class="romo012-sheet" href="assets/documentos/romo-evaporadores-comenergy-extracto.pdf" target="_blank" rel="noopener" aria-label="Abrir extracto técnico PDF de evaporadores COMENERGY">Ver documentación técnica <span aria-hidden="true">↗</span></a></div>
+      <div class="romo012-docnote">Documento del fabricante COMENERGY · extracto de evaporadores (págs. 2 a 8 del original).</div>
+    </div>
+    <aside class="romo013b-gallery" aria-label="Fotografías reales del catálogo de evaporadores">
+      <div class="romo013b-mediahead"><span><i aria-hidden="true"></i> EQUIPOS REALES DEL CATÁLOGO</span><span>FAMILIA 02 / 04</span></div>
+      <div class="romo013b-photos"><figure class="romo013b-feature">
+      <a href="assets/romo-evaporador-convencional.webp" target="_blank" rel="noopener" aria-label="Ampliar fotografía real: Producto del catálogo ROMO · Evaporador">
+        <img loading="lazy" width="763" height="879" src="assets/romo-evaporador-convencional.webp" alt="Fotografía de evaporador de refrigeración incluida en el catálogo ROMO">
+      </a>
+      <figcaption><strong>Producto del catálogo ROMO · Evaporador</strong><small>Imagen de la familia, no del modelo exacto · <span aria-hidden="true">↗</span> ampliar</small></figcaption>
+    </figure><figure class="romo013b-secondary">
+      <a href="assets/romo-evaporador-inoxidable.webp" target="_blank" rel="noopener" aria-label="Ampliar fotografía real: Producto del catálogo ROMO · Acero inoxidable">
+        <img loading="lazy" width="1400" height="704" src="assets/romo-evaporador-inoxidable.webp" alt="Fotografía de evaporador de acero inoxidable del catálogo ROMO">
+      </a>
+      <figcaption><strong>Producto del catálogo ROMO · Acero inoxidable</strong><small>Otra referencia del catálogo · <span aria-hidden="true">↗</span> ampliar</small></figcaption>
+    </figure></div>
+      <p class="romo013b-attribution">Fotografías originales de producto facilitadas en el catálogo ROMO. Representan la familia de equipos y no necesariamente cada modelo listado.</p>
+    </aside>
+  </article>
+  <article class="romo012-family romo012-editorial" id="compresores" aria-labelledby="romo013-comp-title"><div class="romo012-family-copy">
+      <div class="romo012-family-kicker">03 / CATÁLOGO DE PRODUCTOS</div>
+      <h3 id="romo013-comp-title">Compresores <span>de refrigeración</span></h3>
+      <p class="romo012-family-lead">Componentes esenciales del circuito de refrigeración. ROMO incluye compresores para distintas necesidades de conservación de productos; la selección se realiza según el sistema y las condiciones de operación.</p>
+      <div class="romo012-family-label">Modelos representativos · XECOM serie XR</div>
+      <div class="romo012-models"><span>XR38B-C1-101</span><span>XR52B-D1-101</span><span>XR91B-D1-101</span><span>XR135B-D1-101</span></div>
+      <p class="romo012-family-detail">Estos códigos XR aparecen en el catálogo ROMO y en la guía XECOM de compresores scroll para refrigeración de media temperatura a 60 Hz. Revisa las variantes y condiciones de uso al solicitar información.</p>
+      <div class="romo012-actions"><a class="btn primary" href="https://wa.me/523332557257?text=Hola%20ROMO%20Refrigeraci%C3%B3n%2C%20quisiera%20informaci%C3%B3n%20y%20cotizaci%C3%B3n%20de%20compresores%2C%20especialmente%20modelos%20de%20la%20serie%20XR%20del%20cat%C3%A1logo%20XECOM.%20%C2%BFMe%20pueden%20asesorar%3F" target="_blank" rel="noopener">Solicitar cotización <span aria-hidden="true">↗</span></a><a class="romo012-sheet" href="assets/documentos/romo-compresores-xecom-extracto.pdf" target="_blank" rel="noopener" aria-label="Abrir PDF XECOM con nomenclatura y tabla de selección de compresores scroll de 60 Hz">Ver documentación técnica <span aria-hidden="true">↗</span></a></div>
+      <div class="romo012-docnote">Extracto del catálogo XECOM · páginas originales 2 y 6 · nomenclatura y selección de 60 Hz.</div>
+    </div>
+    <aside class="romo013b-gallery romo013b-single" aria-label="Fotografías reales del catálogo de compresores">
+      <div class="romo013b-mediahead"><span><i aria-hidden="true"></i> EQUIPOS REALES DEL CATÁLOGO</span><span>FAMILIA 03 / 04</span></div>
+      <div class="romo013b-photos"><figure class="romo013b-feature">
+      <a href="assets/romo-compresores-foto-catalogo.webp" target="_blank" rel="noopener" aria-label="Ampliar fotografía real: Fotografía del catálogo ROMO · Compresores">
+        <img loading="lazy" width="870" height="785" src="assets/romo-compresores-foto-catalogo.webp" alt="Fotografía auténtica de compresores de refrigeración incluidos en el catálogo general ROMO; imagen no atribuida a XECOM">
+      </a>
+      <figcaption><strong>Fotografía del catálogo ROMO · Compresores</strong><small>Imagen de la familia, no del modelo exacto · <span aria-hidden="true">↗</span> ampliar</small></figcaption>
+    </figure></div>
+      <p class="romo013b-attribution">La fotografía procede del catálogo general ROMO y no identifica los modelos XR de XECOM citados arriba. Los códigos XECOM se respaldan en su propio documento técnico.</p>
+    </aside>
+  </article>
+  <article class="romo012-family romo012-family-inverse romo012-editorial" id="condensadores" aria-labelledby="romo013-cond-title"><div class="romo012-family-copy">
+      <div class="romo012-family-kicker">04 / CATÁLOGO DE PRODUCTOS</div>
+      <h3 id="romo013-cond-title">Condensadores <span>de refrigeración</span></h3>
+      <p class="romo012-family-lead">Equipos que participan en la disipación de calor del sistema. ROMO contempla opciones de distintas dimensiones y configuraciones para aplicaciones comerciales e industriales.</p>
+      <div class="romo012-family-label">Modelos representativos del catálogo ROMO</div>
+      <div class="romo012-models"><span>FNF-2.2/8.2</span><span>FNF-7.3/25</span><span>FNV-5003-219</span><span>FNV-5503-256</span></div>
+      <p class="romo012-family-detail">El catálogo ROMO presenta modelos de las familias FNF y FNV. El material de COMENERGY también documenta estas familias, con distintas referencias según la línea; confirma el código y la selección específica durante la cotización.</p>
+      <div class="romo012-actions"><a class="btn primary" href="https://wa.me/523332557257?text=Hola%20ROMO%20Refrigeraci%C3%B3n%2C%20quisiera%20informaci%C3%B3n%20y%20cotizaci%C3%B3n%20de%20condensadores%20de%20las%20familias%20FNF%20y%20FNV.%20%C2%BFMe%20pueden%20asesorar%3F" target="_blank" rel="noopener">Solicitar cotización <span aria-hidden="true">↗</span></a><a class="romo012-sheet" href="assets/documentos/romo-condensadores-comenergy-extracto.pdf" target="_blank" rel="noopener" aria-label="Abrir extracto técnico PDF COMENERGY de condensadores FNF y FNV-W">Ver documentación técnica <span aria-hidden="true">↗</span></a></div>
+      <div class="romo012-docnote">Documento COMENERGY · extracto de condensadores FNF y FNV/W (páginas originales 9 y 10). La nomenclatura de algunas referencias FNF difiere entre documentos.</div>
+    </div>
+    <aside class="romo013b-gallery" aria-label="Fotografías reales del catálogo de condensadores">
+      <div class="romo013b-mediahead"><span><i aria-hidden="true"></i> EQUIPOS REALES DEL CATÁLOGO</span><span>FAMILIA 04 / 04</span></div>
+      <div class="romo013b-photos"><figure class="romo013b-feature">
+      <a href="assets/romo-condensador-foto-catalogo.webp" target="_blank" rel="noopener" aria-label="Ampliar fotografía real: Producto del catálogo ROMO · Condensador">
+        <img loading="lazy" width="880" height="747" src="assets/romo-condensador-foto-catalogo.webp" alt="Fotografía original de condensador con ventiladores, tomada del catálogo ROMO">
+      </a>
+      <figcaption><strong>Producto del catálogo ROMO · Condensador</strong><small>Imagen de la familia, no del modelo exacto · <span aria-hidden="true">↗</span> ampliar</small></figcaption>
+    </figure><figure class="romo013b-secondary">
+      <a href="assets/comenergy-condensadores-fnv-fnw.webp" target="_blank" rel="noopener" aria-label="Ampliar fotografía real: Catálogo COMENERGY · Condensadores FNV/W">
+        <img loading="lazy" width="940" height="443" src="assets/comenergy-condensadores-fnv-fnw.webp" alt="Fotografías de equipos condensadores de las series FNV y FNW publicadas en el catálogo COMENERGY">
+      </a>
+      <figcaption><strong>Catálogo COMENERGY · Condensadores FNV/W</strong><small>Otra referencia del catálogo · <span aria-hidden="true">↗</span> ampliar</small></figcaption>
+    </figure></div>
+      <p class="romo013b-attribution">Fotografías auténticas procedentes de ROMO y COMENERGY; ilustran las familias y no garantizan que se trate exactamente de cada código enumerado.</p>
+    </aside>
+  </article>
+  <p class="romo012-catalog-foot">Las tarjetas superiores usan imágenes de apoyo visual. Las fichas detalladas de las cuatro familias muestran fotografías auténticas de los documentos ROMO y COMENERGY, identificadas por procedencia, que no representan necesariamente cada modelo citado. La selección y compatibilidad se confirman durante la cotización. No se muestran precios.</p>
+</div>
+<div class="demo-badge">Las tarjetas superiores de las familias prioritarias utilizan imágenes de apoyo visual; las fichas detalladas conservan fotografías reales del catálogo ROMO.</div>
 <div id="catalogo" class="catalog-grid" aria-label="Familias de producto de ROMO Refrigeración">
-<article class="catalog-item priority"><small>Prioridad</small><h3>Unidades condensadoras</h3><p>Familia preparada para ficha, fotografía, marca y documentación técnica.</p></article>
-<article class="catalog-item priority"><small>Prioridad</small><h3>Unidades evaporadoras</h3><p>Familia preparada para ficha, fotografía, marca y documentación técnica.</p></article>
-<article class="catalog-item"><small>Catálogo</small><h3>Compresores</h3><p>Producto disponible dentro de la oferta de refrigeración indicada por ROMO.</p></article>
+<article class="catalog-item priority"><small>Prioridad</small><h3>Unidades condensadoras</h3><p>Series CEM semiherméticas y compactas. <a class="romo012-catalog-link" href="#condensadoras">Conocer modelos →</a></p></article>
+<article class="catalog-item priority"><small>Prioridad</small><h3>Unidades evaporadoras</h3><p>Modelos de las series ZLM, DJ y DH. <a class="romo012-catalog-link" href="#evaporadores">Conocer modelos →</a></p></article>
+<article class="catalog-item"><small>Catálogo documentado</small><h3>Compresores</h3><p>Compresores de refrigeración y modelos de la serie XR de XECOM. <a class="romo012-catalog-link" href="#compresores">Conocer modelos →</a></p></article>
 <article class="catalog-item"><small>Catálogo</small><h3>Paneles</h3><p>Material contemplado para proyectos de cuartos fríos.</p></article>
 <article class="catalog-item"><small>Catálogo</small><h3>Puertas de refrigeración y congelación</h3><p>Parte de la oferta para proyectos y conservación.</p></article>
 <article class="catalog-item"><small>Catálogo</small><h3>Máquinas de hielo</h3><p>Familia de producto incluida por ROMO.</p></article>
 <article class="catalog-item"><small>Catálogo</small><h3>Vitrinas</h3><p>Familia de producto incluida por ROMO.</p></article>
 <article class="catalog-item"><small>Catálogo</small><h3>Componentes para unidades condensadoras</h3><p>Componentes relacionados con las unidades condensadoras.</p></article>
-<article class="catalog-item"><small>Catálogo</small><h3>Condensadores</h3><p>Familia de producto incluida por ROMO.</p></article>
+<article class="catalog-item"><small>Catálogo documentado</small><h3>Condensadores</h3><p>Modelos representativos FNF y FNV del catálogo ROMO. <a class="romo012-catalog-link" href="#condensadores">Conocer modelos →</a></p></article>
 <article class="catalog-item"><small>Catálogo</small><h3>Racks industriales</h3><p>Equipo industrial incluido en la oferta indicada por ROMO.</p></article>
-</div><p class="catalog-note">No se muestran precios, modelos, capacidades ni especificaciones hasta contar con la documentación real correspondiente.</p></div></section>
+</div><p class="catalog-note">Las cuatro familias con ficha (unidades condensadoras, evaporadores, compresores y condensadores) presentan modelos de catálogos proporcionados. Las demás categorías mantienen su estado demostrativo; no se muestran precios.</p></div></section>
 
-<section class="section coldroom-section" id="cuarto-frio"><div class="wrap"><div class="section-head"><div><div class="eyebrow" style="color:#79fff0">Guía visual</div><h2>¿Qué integra un cuarto frío?</h2></div><p class="lead">Un esquema sencillo para entender cómo se relacionan algunos de los elementos que ROMO suministra dentro de un proyecto de refrigeración.</p></div><div class="coldroom-layout"><div class="coldroom-diagram" aria-label="Esquema conceptual interactivo de un cuarto frío"><div class="room-box"><div class="room-door"></div><div class="evaporator-shape" aria-hidden="true"></div><div class="condenser-shape" aria-hidden="true"></div><div class="airflow" aria-hidden="true"><i></i><i></i><i></i></div></div><button class="part-button" type="button" data-part="evaporadora" data-title="Unidad evaporadora" data-copy="Trabaja dentro del espacio refrigerado y participa en la circulación del aire frío dentro del recinto." aria-pressed="true">Unidad evaporadora</button><button class="part-button" type="button" data-part="paneles" data-title="Paneles" data-copy="Forman el cerramiento aislado del cuarto frío y ayudan a separar el ambiente interior del exterior." aria-pressed="false">Paneles</button><button class="part-button" type="button" data-part="puerta" data-title="Puerta de refrigeración o congelación" data-copy="Forma parte del cerramiento y permite el acceso al espacio de conservación según las necesidades del proyecto." aria-pressed="false">Puerta</button><button class="part-button" type="button" data-part="condensadora" data-title="Unidad condensadora" data-copy="Forma parte del sistema de refrigeración que trabaja junto con la unidad evaporadora para mantener las condiciones requeridas en el recinto." aria-pressed="false">Unidad condensadora</button></div><aside class="coldroom-info" aria-live="polite"><small>Componente seleccionado</small><h3 id="partTitle">Unidad evaporadora</h3><p id="partCopy">Trabaja dentro del espacio refrigerado y participa en la circulación del aire frío dentro del recinto.</p><div class="coldroom-flow"><b>Funcionamiento explicado en tres ideas</b><div class="flow-step"><span>1</span><div><strong>Cerramiento.</strong> Paneles y puerta conforman el espacio de conservación.</div></div><div class="flow-step"><span>2</span><div><strong>Circulación de frío.</strong> La unidad evaporadora trabaja dentro del recinto.</div></div><div class="flow-step"><span>3</span><div><strong>Sistema de refrigeración.</strong> La unidad condensadora opera en conjunto con los demás componentes del sistema.</div></div></div><p class="coldroom-disclaimer">Esquema conceptual de demostración. La configuración y los componentes definitivos dependen de cada proyecto.</p></aside></div></div></section>
+<section class="section coldroom-section" id="cuarto-frio">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow" style="color:#79fff0">Guía visual interactiva</div><h2>¿Qué integra un cuarto frío?</h2></div>
+      <p class="lead">Descubre dónde se ubica cada componente y qué función cumple dentro de una solución de refrigeración. Selecciona un elemento para conocerlo.</p>
+    </div>
+    <div class="coldroom-layout">
+      <div class="coldroom-diagram" data-selected="evaporadora" aria-label="Ilustración técnica interactiva con paneles, puerta, unidad evaporadora interior y unidad condensadora exterior">
+        <div class="coldroom-diagram-top" aria-hidden="true"><span><i></i> DESPIECE VISUAL <em>/</em> CUARTO FRÍO</span><span>01 — 04</span></div>
+        <div class="coldroom-stage">
+          <svg class="coldroom-scene" viewBox="0 0 760 490" role="img" aria-labelledby="coldroomDrawingTitle coldroomDrawingDesc" xmlns="http://www.w3.org/2000/svg">
+            <title id="coldroomDrawingTitle">Cuarto frío en vista tridimensional esquemática</title>
+            <desc id="coldroomDrawingDesc">El cuarto está construido con paneles aislantes y tiene una puerta de acceso; una unidad evaporadora aparece en la zona interior y una unidad condensadora aparece fuera del recinto, a la izquierda. Los números corresponden a los cuatro botones explicativos.</desc>
+            <defs>
+              <linearGradient id="romoPanelFront" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#effdff"/><stop offset=".54" stop-color="#bcdce9"/><stop offset="1" stop-color="#78a9bc"/></linearGradient>
+              <linearGradient id="romoPanelSide" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#aed7e4"/><stop offset="1" stop-color="#356780"/></linearGradient>
+              <linearGradient id="romoRoof" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8fcff" stop-opacity=".95"/><stop offset="1" stop-color="#51aabc" stop-opacity=".55"/></linearGradient>
+              <linearGradient id="romoDoor" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eaf9fd"/><stop offset="1" stop-color="#91b6c6"/></linearGradient>
+              <linearGradient id="romoMetal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".5" stop-color="#aecdd6"/><stop offset="1" stop-color="#718b9e"/></linearGradient>
+              <linearGradient id="romoExterior" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1c5877"/><stop offset="1" stop-color="#3f88a1"/></linearGradient>
+              <radialGradient id="romoGlow"><stop offset="0" stop-color="#00ffe2" stop-opacity=".24"/><stop offset="1" stop-color="#00ffe2" stop-opacity="0"/></radialGradient>
+              <pattern id="romoGrid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#a4edfa" stroke-opacity=".1" stroke-width="1"/></pattern>
+              <filter id="romoShadow" x="-30%" y="-40%" width="170%" height="200%"><feGaussianBlur stdDeviation="13"/></filter>
+            </defs>
+            <rect width="760" height="490" fill="url(#romoGrid)" opacity=".67"/>
+            <circle cx="380" cy="220" r="255" fill="url(#romoGlow)"/>
+            <path d="M42 437H721" stroke="#a8e8f6" stroke-opacity=".24" stroke-width="1"/>
+            <ellipse cx="410" cy="433" rx="266" ry="28" fill="#001a36" opacity=".62" filter="url(#romoShadow)"/>
+            <ellipse cx="132" cy="456" rx="109" ry="17" fill="#001a36" opacity=".65" filter="url(#romoShadow)"/>
+            <g class="scene-structure scene-paneles">
+              <path d="M218 155L292 99H641L567 155Z" fill="url(#romoRoof)" opacity=".88" stroke="#d9fbff" stroke-width="2"/>
+              <path d="M567 155L641 99V373L567 426Z" fill="url(#romoPanelSide)" stroke="#8fcbd9" stroke-width="2"/>
+              <path d="M567 209L641 156M567 260L641 208M567 312L641 262M567 362L641 314" stroke="#c8eff6" stroke-width="2" stroke-opacity=".5"/>
+              <path d="M589 139V409M614 118V391" stroke="#e4fbff" stroke-opacity=".36" stroke-width="1.5"/>
+              <path d="M218 155H567V426H218Z" fill="url(#romoPanelFront)" opacity=".36" stroke="#dffbff" stroke-width="3"/>
+              <path d="M226 161H560V418H226Z" fill="#083e5b" fill-opacity=".72"/>
+              <path d="M228 211H560M228 300H560M305 159V416M395 159V416M486 159V416" stroke="#d0f6fd" stroke-opacity=".28" stroke-width="2"/>
+              <path d="M219 425H567L641 373L292 374Z" fill="#6ca1b5" fill-opacity=".58" stroke="#bdeef5" stroke-width="2"/>
+              <path d="M218 156V425H567" fill="none" stroke="#efffff" stroke-width="5"/>
+              <path d="M567 155V425" fill="none" stroke="#a4e5f0" stroke-width="4"/>
+              <path d="M218 155H567L641 99" fill="none" stroke="#f1ffff" stroke-width="4"/>
+              <path d="M234 174V404" stroke="#adf6ff" opacity=".29" stroke-width="2"/>
+            </g>
+            <g class="scene-evaporadora scene-part">
+              <path d="M269 203H416L429 215V263H279L269 251Z" fill="url(#romoMetal)" stroke="#e8faff" stroke-width="2.5"/>
+              <path d="M269 203L280 215H428L416 203" fill="#f1feff" stroke="#fff" stroke-opacity=".7"/>
+              <path d="M279 215H429V263H279Z" fill="#d7edf4" stroke="#5e879d" stroke-width="2"/>
+              <g fill="#e5f7fa" stroke="#5e8899" stroke-width="2.5">
+                <circle cx="312" cy="239" r="18"/><circle cx="357" cy="239" r="18"/><circle cx="401" cy="239" r="18"/>
+              </g>
+              <g fill="#507d91" stroke="#789cae" stroke-width="1.1">
+                <path d="M312 237q-8-14 1-13l4 12zM314 239q15-4 10 5l-11 2zM309 241q-5 16-11 7l8-11z"/>
+                <path d="M357 237q-8-14 1-13l4 12zM359 239q15-4 10 5l-11 2zM354 241q-5 16-11 7l8-11z"/>
+                <path d="M401 237q-8-14 1-13l4 12zM403 239q15-4 10 5l-11 2zM398 241q-5 16-11 7l8-11z"/>
+              </g>
+              <path d="M291 267C306 283 325 284 340 269M354 267C373 286 390 281 408 267" fill="none" stroke="#00ffe2" stroke-width="3" stroke-dasharray="5 8" opacity=".77"/>
+            </g>
+            <g class="scene-puerta scene-part">
+              <path d="M462 282H538V421H462Z" fill="#1e607c" opacity=".4"/>
+              <path d="M455 274H538V425H455Z" fill="#f7ffff" stroke="#e9fdff" stroke-width="5"/>
+              <path d="M462 280H531V416H462Z" fill="url(#romoDoor)" stroke="#5d879a" stroke-width="2"/>
+              <path d="M466 282V413" stroke="#fff" stroke-opacity=".72" stroke-width="3"/>
+              <path d="M471 292H524" stroke="#fff" stroke-opacity=".5" stroke-width="2"/>
+              <rect x="512" y="335" width="5" height="35" rx="2.5" fill="#007e90"/>
+              <rect x="493" y="421" width="20" height="4" rx="2" fill="#6f9cac"/>
+            </g>
+            <g class="scene-conexiones" fill="none" stroke-linecap="round">
+              <path d="M191 391V274C191 258 201 249 218 249H268" stroke="#072941" stroke-width="11" stroke-opacity=".54"/>
+              <path d="M191 391V274C191 258 201 249 218 249H268" stroke="#73daeb" stroke-width="3.5" stroke-dasharray="9 7" stroke-opacity=".9"/>
+            </g>
+            <g class="scene-condensadora scene-part">
+              <path d="M66 374L88 357H188L168 375Z" fill="#e5f8fd" stroke="#e4faff" stroke-width="2"/>
+              <path d="M168 375L188 357V443L168 461Z" fill="#79a9b8" stroke="#c2e5ee" stroke-width="2"/>
+              <path d="M66 374H168V461H66Z" fill="url(#romoMetal)" stroke="#e3f8ff" stroke-width="3"/>
+              <rect x="76" y="384" width="80" height="66" rx="2" fill="#426c80"/>
+              <circle cx="117" cy="418" r="31" fill="#d6e8ee" stroke="#91bfca" stroke-width="4"/>
+              <circle cx="117" cy="418" r="22" fill="#6e99a9" stroke="#dceff4" stroke-width="1.5"/>
+              <path d="M117 413q-17-22-19-2l13 11zM123 417q22 12 10 24l-17-14zM115 426q-13 21-24 7l17-18z" fill="#d9edf2"/>
+              <circle cx="117" cy="418" r="5.5" fill="#34647b"/>
+              <path d="M171 385L183 375M171 397L183 387M171 409L183 399M171 421L183 411M171 433L183 423" stroke="#e9ffff" stroke-width="2" opacity=".7"/>
+              <path d="M76 461V468H94V461M144 461V468H162V461" fill="#7bafbc" stroke="#add3de"/>
+            </g>
+            <g class="scene-zones" font-family="Kanit,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#b8f4fa">
+              <path d="M284 314H429" stroke="#b8f4fa" stroke-opacity=".17" stroke-dasharray="4 8"/>
+              <text x="298" y="340" opacity=".85">INTERIOR</text>
+              <text x="80" y="343" opacity=".9">EXTERIOR</text>
+            </g>
+            <g class="scene-indices" font-family="Kanit,Arial,sans-serif" text-anchor="middle" font-size="14" font-weight="700">
+              <g class="scene-pin" data-for="evaporadora"><circle cx="431" cy="190" r="17" fill="#00ffe2" stroke="#fff" stroke-width="2"/><text x="431" y="195" fill="#003f66">01</text></g>
+              <g class="scene-pin" data-for="paneles"><circle cx="620" cy="173" r="17" fill="#00ffe2" stroke="#fff" stroke-width="2"/><text x="620" y="178" fill="#003f66">02</text></g>
+              <g class="scene-pin" data-for="puerta"><circle cx="538" cy="298" r="17" fill="#00ffe2" stroke="#fff" stroke-width="2"/><text x="538" y="303" fill="#003f66">03</text></g>
+              <g class="scene-pin" data-for="condensadora"><circle cx="182" cy="365" r="17" fill="#00ffe2" stroke="#fff" stroke-width="2"/><text x="182" y="370" fill="#003f66">04</text></g>
+            </g>
+          </svg>
+          <div class="coldroom-controls" role="group" aria-label="Seleccionar componente del cuarto frío">
+            <button class="part-button" type="button" data-part="evaporadora" data-title="Unidad evaporadora" data-zone="DENTRO DEL CUARTO FRÍO" data-copy="Se instala dentro del recinto. Participa en la extracción de calor del aire interior y en la distribución del aire enfriado." aria-pressed="true"><span class="part-num">01</span> Evaporadora</button>
+            <button class="part-button" type="button" data-part="paneles" data-title="Paneles aislantes" data-zone="CERRAMIENTO DEL RECINTO" data-copy="Forman las paredes y el techo del cuarto frío. Los paneles tipo sándwich de la ficha técnica proporcionada tienen caras metálicas y un núcleo aislante de poliuretano." aria-pressed="false"><span class="part-num">02</span> Paneles</button>
+            <button class="part-button" type="button" data-part="puerta" data-title="Puerta de acceso" data-zone="ACCESO AL RECINTO" data-copy="Permite entrar y salir del cuarto frío sin dejar abierto permanentemente el recinto. Las opciones de puerta se eligen conforme a la aplicación de refrigeración o congelación." aria-pressed="false"><span class="part-num">03</span> Puerta</button>
+            <button class="part-button" type="button" data-part="condensadora" data-title="Unidad condensadora" data-zone="FUERA DEL CUARTO FRÍO" data-copy="Forma parte del sistema de refrigeración y trabaja junto a la evaporadora para transferir al exterior el calor retirado del espacio refrigerado." aria-pressed="false"><span class="part-num">04</span> Condensadora</button>
+          </div>
+        </div>
+        <div class="coldroom-stage-footer"><span><i class="coldroom-swatch"></i> Recinto aislado</span><span><i class="coldroom-swatch exterior"></i> Equipo exterior</span><span>Ilustración conceptual · no representa una instalación ejecutada</span></div>
+      </div>
+      <aside class="coldroom-info" aria-live="polite" aria-atomic="false">
+        <div class="coldroom-info-index">CONOCE CADA ELEMENTO <span>01 / 04</span></div>
+        <small id="partZone">DENTRO DEL CUARTO FRÍO</small>
+        <h3 id="partTitle">Unidad evaporadora</h3>
+        <p id="partCopy">Se instala dentro del recinto. Participa en la extracción de calor del aire interior y en la distribución del aire enfriado.</p>
+        <div class="coldroom-flow">
+          <b>Cómo trabajan en conjunto</b>
+          <div class="flow-step"><span>1</span><div><strong>Aislar.</strong> Paneles y puerta ayudan a separar el ambiente interior del exterior.</div></div>
+          <div class="flow-step"><span>2</span><div><strong>Enfriar.</strong> La evaporadora actúa sobre el aire del recinto.</div></div>
+          <div class="flow-step"><span>3</span><div><strong>Rechazar calor.</strong> La condensadora participa en la transferencia de calor hacia el exterior.</div></div>
+        </div>
+        <p class="coldroom-disclaimer">La disposición es explicativa. La selección de equipos, puertas y paneles depende de los requisitos de cada proyecto.</p>
+      </aside>
+    </div>
+    <figure class="coldroom-material">
+      <img loading="lazy" src="assets/panel-sandwich-ficha-romo.webp" width="263" height="124" alt="Paneles sándwich apilados, fotografía de la ficha técnica de paneles facilitada para ROMO" />
+      <figcaption><strong>Material de referencia: panel sándwich</strong><span>Fotografía tomada de la ficha técnica proporcionada. Ilustra el producto; no se presenta como una obra instalada por ROMO.</span></figcaption>
+      <span class="coldroom-material-label">FUENTE TÉCNICA</span>
+    </figure>
+  </div>
+</section>
 
 <section class="section soft" id="aplicaciones"><div class="wrap"><div class="section-head"><div><div class="eyebrow" style="color:#008b8b">Aplicaciones</div><h2>¿Qué necesitas conservar?</h2></div><p class="lead">ROMO atiende necesidades de conservación vinculadas con la cadena de frío, especialmente en empresas y comercios del sector alimenticio.</p></div><div class="need-grid"><article class="need-card"><small>01</small><h3>Industria alimenticia</h3><p>Soluciones de refrigeración para empresas que requieren conservar productos dentro de su operación.</p></article><article class="need-card"><small>02</small><h3>Carnicerías</h3><p>Equipamiento y soluciones para necesidades de conservación de productos.</p></article><article class="need-card"><small>03</small><h3>Cremerías</h3><p>Opciones de refrigeración vinculadas con la conservación y exhibición de producto.</p></article><article class="need-card"><small>04</small><h3>CEDIS</h3><p>Proyectos relacionados con almacenamiento y conservación dentro de la cadena de frío.</p></article><article class="need-card"><small>05</small><h3>Supermercados y negocios con cámaras frigoríficas</h3><p>Equipos y componentes para operaciones que dependen de conservación refrigerada.</p></article></div></div></section>
 
 <section class="section" id="experiencia"><div class="wrap authority"><div class="authority-copy"><div class="eyebrow" style="color:#008b8b">Experiencia y confianza</div><h2>Especialización respaldada por experiencia real.</h2><p class="lead">ROMO combina experiencia en refrigeración, conocimiento de cadena de frío, atención personalizada y una oferta amplia para adaptarse a las necesidades de cada proyecto.</p></div><div class="authority-grid"><article class="authority-card"><strong>Más de 25 años en refrigeración</strong><p>Experiencia declarada por ROMO en el ramo y en proyectos de cuartos fríos.</p></article><article class="authority-card"><strong>NOM-012-ENER-2019</strong><p>ROMO reporta certificación para unidades condensadoras y unidades evaporadoras de bajo perfil.</p></article><article class="authority-card wide"><strong>Distribución directa</strong><p>ROMO indicó relación de distribución directa con COMENERGY y RESOUR.</p></article></div></div></section>
 
-<section class="section soft" id="marcas"><div class="wrap"><div class="section-head"><div><div class="eyebrow" style="color:#008b8b">Marcas</div><h2>COMENERGY y RESOUR</h2></div><p class="lead">Recursos de marca presentados sin reinterpretar sus logotipos. ROMO los identifica como marcas de distribución directa.</p></div><div class="brandwall real"><div class="brand-unit"><img loading="lazy" src="assets/comenergy-logo.png" alt="COMENERGY Heat Exchanger & Units" width="1600" height="488"><span class="brand-note">Distribución directa</span></div><div class="brand-unit"><img loading="lazy" src="assets/resour-logo.png" alt="RESOUR" width="206" height="64"><span class="brand-note">Distribución directa</span></div></div></div></section>
+<section class="section soft" id="marcas"><div class="wrap"><div class="section-head"><div><div class="eyebrow" style="color:#008b8b">Marcas</div><h2>COMENERGY, RESOUR y XECOM</h2></div><p class="lead">Recursos de marca presentados sin reinterpretar sus logotipos. COMENERGY y RESOUR son marcas de distribución directa; XECOM se incorpora a partir de su catálogo oficial de compresores.</p></div><div class="brandwall real"><div class="brand-unit"><img loading="lazy" src="assets/comenergy-logo.png" alt="COMENERGY Heat Exchanger & Units" width="1600" height="488"><span class="brand-note">Distribución directa</span></div><div class="brand-unit"><img loading="lazy" src="assets/resour-logo.png" alt="RESOUR" width="206" height="64"><span class="brand-note">Distribución directa</span></div><div class="brand-unit"><img loading="lazy" src="assets/xecom-logo.png" alt="XECOM" width="202" height="131"><span class="brand-note">Catálogo de compresores</span></div></div></div></section>
 
 <section class="section" id="proyectos"><div class="wrap"><div class="section-head"><div><div class="eyebrow" style="color:#008b8b">Proyectos</div><h2>Experiencia aplicada a necesidades reales de frío.</h2></div><p class="lead">La estructura queda lista para recibir fotografías, necesidad, solución, componentes principales y contexto de cada proyecto sin inventar resultados.</p></div><div class="project-grid"><article class="project-card"><small>Proyecto identificado por ROMO</small><h3>CEDI para congelación de pollo</h3><p>ROMO indicó que puede mostrar este proyecto con imágenes. La ficha se completará cuando se reciban las fotografías y los datos autorizados del caso.</p><div class="demo-photo-note">Material fotográfico real pendiente</div></article><article class="project-card secondary"><small>Galería preparada</small><h3>Proyectos semiterminados y terminados</h3><p>Este espacio recibirá progresivamente instalaciones, equipos, proyectos y otros trabajos realizados por ROMO.</p><div class="demo-photo-note">Sin proyectos inventados ni cifras no documentadas</div></article></div></div></section>
 
@@ -176,10 +636,10 @@ nav a:not(.btn){position:relative}nav a:not(.btn):after{content:"";position:abso
 
 <section class="section" aria-label="Cierre comercial"><div class="wrap"><div class="cta"><div><div class="eyebrow">ROMO Refrigeración</div><h2>Más que refrigeración, una solución que perdura.</h2><p>Especialistas en soluciones de refrigeración comercial e industrial para conservar tus productos en las condiciones adecuadas.</p></div><div class="actions"><a class="btn primary" href="#contacto">Solicitar cotización</a></div></div></div></section>
 
-<section class="section soft" id="contacto"><div class="wrap contact"><div class="contact-card"><div class="eyebrow">Contacto</div><h3>Hablemos de tu proyecto.</h3><p>Solicita información sobre equipos, componentes o proyectos de cuartos fríos.</p><div class="contact-links"><a class="contact-link" href="tel:+523327153080"><strong>Teléfono</strong><span>33 2715 3080</span></a><a class="contact-link" href="https://wa.me/523332557257?text=Hola%20ROMO%20Refrigeraci%C3%B3n%2C%20quiero%20solicitar%20informaci%C3%B3n%20sobre%20una%20soluci%C3%B3n%20de%20refrigeraci%C3%B3n." target="_blank" rel="noopener"><strong>WhatsApp</strong><span>33 3255 7257</span></a><a class="contact-link" href="mailto:romorefrigoperacion@gmail.com"><strong>Correo</strong><span>romorefrigoperacion@gmail.com</span></a><a class="contact-link contact-address" href="https://www.google.com/maps/search/?api=1&amp;query=Calle%20Jazm%C3%ADn%201235%20A%2C%20Colonia%20Ferrocarril%2C%20Zapopan%2C%20Jalisco%2044440" target="_blank" rel="noopener"><strong>Ubicación</strong><span>Calle Jazmín 1235 A, Colonia Ferrocarril, Zapopan, Jalisco, CP 44440</span></a><div class="contact-link"><strong>Horario</strong><span>Lunes a viernes 9:00–17:30 · Sábados 9:00–14:00</span></div></div><div class="contact-actions"><a class="btn whatsapp" href="https://wa.me/523332557257?text=Hola%20ROMO%20Refrigeraci%C3%B3n%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener">WhatsApp</a><a class="btn outline" href="tel:+523327153080">Llamar</a></div></div><form class="form" id="quoteForm"><label class="sr-only" for="nombre">Nombre</label><input id="nombre" name="nombre" required autocomplete="name" placeholder="Nombre"><label class="sr-only" for="empresa">Empresa</label><input id="empresa" name="empresa" autocomplete="organization" placeholder="Empresa"><label class="sr-only" for="telefono">Teléfono o WhatsApp</label><input id="telefono" name="telefono" type="tel" required autocomplete="tel" placeholder="Teléfono / WhatsApp"><label class="sr-only" for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" required autocomplete="email" placeholder="Correo electrónico"><label class="sr-only" for="necesidad">Qué necesitas</label><select id="necesidad" name="necesidad" class="full"><option value="Cotización de producto">Cotización de producto</option><option value="Información de equipo">Información de equipo</option><option value="Proyecto de cuarto frío">Proyecto de cuarto frío</option><option value="Otro">Otro</option></select><label class="sr-only" for="mensaje">Cuéntanos qué necesitas</label><textarea id="mensaje" name="mensaje" placeholder="Cuéntanos brevemente qué necesitas"></textarea><div class="form-help">Demo funcional: al enviar se preparará un correo dirigido a ROMO con los datos capturados. En producción puede sustituirse por envío directo desde el servidor.</div><button class="btn dark full" type="submit">Preparar solicitud por correo</button></form></div></section>
+<section class="section soft" id="contacto"><div class="wrap contact"><div class="contact-card"><div class="eyebrow">Contacto</div><h3>Hablemos de tu proyecto.</h3><p>Solicita información sobre equipos, componentes o proyectos de cuartos fríos.</p><div class="contact-links"><a class="contact-link" href="tel:+523327153080"><strong>Teléfono</strong><span>33 2715 3080</span></a><a class="contact-link" href="https://wa.me/523332557257?text=Hola%20ROMO%20Refrigeraci%C3%B3n%2C%20quiero%20solicitar%20informaci%C3%B3n%20sobre%20una%20soluci%C3%B3n%20de%20refrigeraci%C3%B3n." target="_blank" rel="noopener"><strong>WhatsApp</strong><span>33 3255 7257</span></a><a class="contact-link" href="mailto:romorefrigoperacion@gmail.com"><strong>Correo</strong><span>romorefrigoperacion@gmail.com</span></a><a class="contact-link contact-address" href="https://www.google.com/maps/search/?api=1&amp;query=Calle%20Jazm%C3%ADn%201235%20A%2C%20Colonia%20Ferrocarril%2C%20Guadalajara%2C%20Jalisco%2044440" target="_blank" rel="noopener"><strong>Ubicación</strong><span>Calle Jazmín 1235 A, Colonia Ferrocarril, Guadalajara, Jalisco, CP 44440</span></a><div class="contact-link"><strong>Horario</strong><span>Lunes a viernes 9:00–17:30 · Sábados 9:00–14:00</span></div></div><div class="contact-actions"><a class="btn whatsapp" href="https://wa.me/523332557257?text=Hola%20ROMO%20Refrigeraci%C3%B3n%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener">WhatsApp</a><a class="btn outline" href="tel:+523327153080">Llamar</a></div></div><form class="form" id="quoteForm"><label class="sr-only" for="nombre">Nombre</label><input id="nombre" name="nombre" required autocomplete="name" placeholder="Nombre"><label class="sr-only" for="empresa">Empresa</label><input id="empresa" name="empresa" autocomplete="organization" placeholder="Empresa"><label class="sr-only" for="telefono">Teléfono o WhatsApp</label><input id="telefono" name="telefono" type="tel" required autocomplete="tel" placeholder="Teléfono / WhatsApp"><label class="sr-only" for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" required autocomplete="email" placeholder="Correo electrónico"><label class="sr-only" for="necesidad">Qué necesitas</label><select id="necesidad" name="necesidad" class="full"><option value="Cotización de producto">Cotización de producto</option><option value="Información de equipo">Información de equipo</option><option value="Proyecto de cuarto frío">Proyecto de cuarto frío</option><option value="Otro">Otro</option></select><label class="sr-only" for="mensaje">Cuéntanos qué necesitas</label><textarea id="mensaje" name="mensaje" placeholder="Cuéntanos brevemente qué necesitas"></textarea><div class="form-help">Demo funcional: al enviar se preparará un correo dirigido a ROMO con los datos capturados. En producción puede sustituirse por envío directo desde el servidor.</div><button class="btn dark full" type="submit">Preparar solicitud por correo</button></form></div></section>
 </main>
 <a class="floating" href="https://wa.me/523332557257?text=Hola%20ROMO%20Refrigeraci%C3%B3n%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener" aria-label="Solicitar cotización por WhatsApp">WhatsApp · Cotizar</a>
-<footer><div class="wrap foot"><div><strong>ROMO REFRIGERACIÓN</strong><div class="footer-tagline">Frío que permanece, confianza que perdura.</div><div class="footer-contact">33 2715 3080 · WhatsApp 33 3255 7257<br>romorefrigoperacion@gmail.com<br>Calle Jazmín 1235 A, Colonia Ferrocarril, Zapopan, Jalisco, CP 44440</div><small>Demo conceptual · ROMO-WEB-DEMO-009</small></div><small>Demo no indexable. Contenido y material visual sujeto a revisión final de ROMO.</small></div></footer>
+<footer><div class="wrap foot"><div><strong>ROMO REFRIGERACIÓN</strong><div class="footer-tagline">Frío que permanece, confianza que perdura.</div><div class="footer-contact">33 2715 3080 · WhatsApp 33 3255 7257<br>romorefrigoperacion@gmail.com<br>Calle Jazmín 1235 A, Colonia Ferrocarril, Guadalajara, Jalisco, CP 44440</div><small>Demo conceptual · ROMO-WEB-DEMO-013</small></div><small>Demo no indexable. Contenido y material visual sujeto a revisión final de ROMO.</small></div></footer>
 <div class="modal" id="demoModal" aria-hidden="true"><div class="modalbox"><button type="button" onclick="closeDemo()" aria-label="Cerrar">×</button><div class="eyebrow" style="color:#008b8b">Experiencia de producto</div><h2 id="modalTitle">Ficha técnica</h2><p>La arquitectura está preparada para incorporar el detalle y la ficha técnica PDF cuando ROMO proporcione la documentación real del producto.</p><div class="actions"><a class="btn dark" href="#contacto" onclick="closeDemo()">Solicitar cotización</a><a class="btn" style="border-color:#d7e3e9" href="#" onclick="closeDemo();return false">Cerrar</a></div></div></div>
 <style>.modal{position:fixed;inset:0;background:#001c2dcc;z-index:100;display:none;place-items:center;padding:20px}.modal.open{display:grid}.modalbox{width:min(560px,100%);background:#fff;border-radius:18px;padding:38px;position:relative;box-shadow:0 30px 90px #0006}.modalbox>button{position:absolute;right:18px;top:12px;border:0;background:none;font-size:32px;color:#607782;cursor:pointer}.modalbox h2{color:var(--blue);font-size:36px;margin:10px 0}.modalbox p{color:#637985;line-height:1.7}
 /* ROMO 008A/009 — cold motion preserved + photographic commercial sections */
@@ -205,7 +665,7 @@ m.addEventListener('click',()=>{const open=n.style.display==='flex';if(open){n.r
 n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{if(window.innerWidth<=900){n.removeAttribute('style');m.setAttribute('aria-expanded','false')}}));
 window.addEventListener('resize',closeMobileNav);
 const partButtons=[...document.querySelectorAll('.part-button')];
-partButtons.forEach(btn=>btn.addEventListener('click',()=>{partButtons.forEach(b=>b.setAttribute('aria-pressed','false'));btn.setAttribute('aria-pressed','true');document.getElementById('partTitle').textContent=btn.dataset.title;document.getElementById('partCopy').textContent=btn.dataset.copy;}));
+partButtons.forEach(btn=>btn.addEventListener('click',()=>{partButtons.forEach(b=>b.setAttribute('aria-pressed','false'));btn.setAttribute('aria-pressed','true');document.getElementById('partTitle').textContent=btn.dataset.title;document.getElementById('partCopy').textContent=btn.dataset.copy;document.getElementById('partZone').textContent=btn.dataset.zone;document.querySelector('#cuarto-frio .coldroom-diagram').dataset.selected=btn.dataset.part;document.querySelector('#cuarto-frio .coldroom-info-index span').textContent=btn.querySelector('.part-num').textContent+' / 04';}));
 const quoteForm=document.getElementById('quoteForm');
 quoteForm.addEventListener('submit',e=>{e.preventDefault();const d=new FormData(quoteForm);const subject='Solicitud desde sitio ROMO — '+d.get('necesidad');const body=['Nombre: '+d.get('nombre'),'Empresa: '+(d.get('empresa')||'No indicada'),'Teléfono / WhatsApp: '+d.get('telefono'),'Correo: '+d.get('correo'),'Necesidad: '+d.get('necesidad'),'','Mensaje:',d.get('mensaje')||'Sin mensaje adicional'].join('\n');window.location.href='mailto:romorefrigoperacion@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body)});
 </script>
